@@ -8,7 +8,8 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 800px;
+    width: 1200px;
+    height: 100vh;
     border: 0.5px solid #277bc0;
   }
   
@@ -37,23 +38,42 @@ body {
     display: flex;
     justify-content: space-between;
     color: #277bc0;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #277bc0;
+    padding: 0 10px;
   }
   
   .categories {
     color: #277bc0;
-    text-transform: uppercase;
     text-decoration: underline;
     font-size: 1rem;
+  }
+  
+  .cover {
+    border: 2px solid #277bc0;
+    height: 450px;
+    width: 800px;
+  }
+  
+  .set {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 400px;
+    max-height: 400px;
+    text-align: left;
+    padding-left: 10px;
+  }
+  
+  .content {
+    width: 400px;
   }
   
   ul {
     list-style: none;
   }
   
-  .cat-container {
-    width: 500px;
-    border: 2px solid #277bc0;
+  span {
+    color: #277bc0;
   }
-  
-  
   
