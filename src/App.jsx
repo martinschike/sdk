@@ -47,7 +47,8 @@ export default function App() {
   };
 
   return (
-    <div>
+    <>
+    <div className="container">
       <Categories
         totalSDK={totalSDK}
         getSDKs={getSDKs}
@@ -56,5 +57,6 @@ export default function App() {
         onCategoryTypeChange={activeCategory}
       />
     </div>
+    </>
   );
 }

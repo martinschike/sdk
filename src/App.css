@@ -10,7 +10,7 @@ body {
     text-align: center;
     width: 1200px;
     height: 100vh;
-    border: 0.5px solid #277bc0;
+    border: 0.3px solid #277bc0;
   }
   
   .btn {
@@ -23,17 +23,25 @@ body {
     text-transform: capitalize;
     font-size: 1rem;
     letter-spacing: 0.1rem;
-    margin-top: 2rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
     cursor: pointer;
     transition: all 0.3s linear;
   }
+
   .btn:hover {
     background: rgb(6, 49, 80);
     color: hsl(205, 78%, 60%);
   }
   
+  .btn-container {
+    width: 300px;
+    max-height: cover;
+    border: 3px solid #277bc0;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    padding: 0;
+  }
+
+
   header {
     display: flex;
     justify-content: space-between;
@@ -50,7 +58,7 @@ body {
   }
   
   .cover {
-    border: 2px solid #277bc0;
+    border: 3px solid #277bc0;
     height: 450px;
     width: 800px;
   }

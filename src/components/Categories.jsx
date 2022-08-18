@@ -10,6 +10,7 @@ const Categories = ({
 }) => {
   return (
     <div>
+      <div className="btn-container">
       <button
         style={active === "installedSdks" ? { backgroundColor: "white" } : {}}
         onClick={() => onCategoryTypeChange("installedSdks")}
@@ -24,6 +25,7 @@ const Categories = ({
       >
         UnInstalled
       </button>
+      </div>
       <div className="cover">
         <header>
           <h3>{active}</h3>
