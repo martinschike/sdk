@@ -15,7 +15,7 @@ export default function App() {
   };
 
   useEffect(() => {
-    console.log("uninstalled ::::: ", uninstalled);
+    // console.log("uninstalled ::::: ", uninstalled);
     activeCategory();
   }, []);
 

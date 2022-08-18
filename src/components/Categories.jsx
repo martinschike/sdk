@@ -13,21 +13,26 @@ const Categories = ({
       <button
         style={active === "installedSdks" ? { backgroundColor: "white" } : {}}
         onClick={() => onCategoryTypeChange("installedSdks")}
+        className="btn"
       >
         Installed
       </button>
       <button
         style={active === "uninstalledSdks" ? { backgroundColor: "white" } : {}}
         onClick={() => onCategoryTypeChange("uninstalledSdks")}
+        className="btn"
       >
         UnInstalled
       </button>
-      <h1>Categories goes here Total {totalSDK}</h1>
+      <header>
+        <h3>{active}</h3>
+        <h3>{totalSDK}</h3>
+      </header>
       {categories.map((c, i) => {
         const sdks = getSDKs(c, active);
         return (
-          <div key={i}>
-            <h2>{c} </h2>
+          <div key={i} className="cat">
+            <h2 className="categories">{c} </h2>
             {sdks.length ? <SDKList sdks={sdks} /> : ""}
           </div>
         );
