@@ -1,12 +1,18 @@
 import React from "react";
-import SDKList from "./SDKList";
 
-const Categories = () => {
+const Categories = ({ data }) => {
   return (
     <div>
-        <SDKList />
+      {data.map((dataItem) => {
+        return (
+          <div key={dataItem.id}>
+            <p>{dataItem.categories}</p>
+            console.log(dataItem)
+          </div>
+        );
+      })}
     </div>
-  )
-}
+  );
+};
 
 export default Categories;
